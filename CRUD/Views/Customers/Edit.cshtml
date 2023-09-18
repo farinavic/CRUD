@@ -11,7 +11,7 @@
 {
     @Html.AntiForgeryToken()
     
-    <div class="form-horizontal">
+    <div class="form-horizontal" style="display: flex; justify-content: center; flex-direction: column; gap: 20px; margin-bottom: 20px;">
         <h4>Customer</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
@@ -42,7 +42,7 @@
 }
 
 <div>
-    <a href=@Url.Action("Index", "Customers") class="btn btn-light" style="display: flex; justify-content: center; align-items: center; gap: 10px; width: 180px;">
+    <a href=@Url.Action("Index", "Customers")  class="btn btn-light" style="display: flex; justify-content: center; align-items: center; gap: 10px; width: 180px;">
         <i class="bi bi-arrow-left-circle" style=" font-size: 20px;"></i>
         <span>Back to List</span>
     </a>

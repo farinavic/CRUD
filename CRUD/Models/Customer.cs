@@ -11,11 +11,15 @@ namespace CRUD.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Customer
     {
+
         public int CustomerID { get; set; }
+        [Display(Name = "Customer Name")]
         public string CustomerName { get; set; }
+        [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
     }
 }
